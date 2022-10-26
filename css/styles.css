@@ -3,6 +3,7 @@
   --white: #fff;
   --black: #000;
   --gray: #757575;
+  --blue: #2196f3;
 }
 
 body {
@@ -63,9 +64,16 @@ footer .container {
   padding-left: 0;
 }
 
+.general-hover:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.general-hover:hover .min-icon {
+  fill: var(--blue);
+}
 /*stilos del encabezado*/
 #logo-web {
-  color: #2196f3;
+  color: var(--blue);
   font-size: 26px;
   font-family: "Raleway";
   font-weight: 700;
@@ -83,13 +91,8 @@ footer .container {
   margin-right: 50px;
 }
 
-.style-link:hover,
-.style-link:focus {
-  color: #2196f3;
-}
-
 .contact {
-  color: #757575;
+  color: var(--gray);
   text-decoration: none;
   font-weight: 500;
   display: flex;
@@ -108,7 +111,7 @@ footer .container {
 .solutions-title {
   width: 696px;
   height: 120px;
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
   letter-spacing: 0.06em;
   margin: 0 auto;
@@ -124,8 +127,8 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: none;
@@ -136,12 +139,12 @@ footer .container {
 
 .solutions-button:hover,
 .solutions-button:focus {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 
 /*stilos de los parrafos*/
 .section-2 {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .paragraph {
@@ -162,7 +165,7 @@ footer .container {
 }
 
 .val-description {
-  color: #757575;
+  color: var(--gray);
   font-size: 14px;
   line-height: 2.4;
   letter-spacing: 0.03em;
@@ -186,7 +189,7 @@ footer .container {
 }
 
 .section-3.container {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 373.16px;
   height: 323.7px;
 }
@@ -216,7 +219,7 @@ footer .container {
 }
 
 .professional-board {
-  background: #ffffff;
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -246,12 +249,12 @@ footer .container {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray);
 }
 
 /* estilos del footer*/
 .list-city {
-  color: #ffffff;
+  color: var(--white);
   letter-spacing: 0.03em;
   line-height: 24px;
   width: 231px;
@@ -268,9 +271,7 @@ footer .container {
   min-height: 21px;
   font-style: normal;
 }
-
 /*ESTILOS DEL PORTFOLIO*/
-
 /*estilos de los botones*/
 .section-5 ul {
   display: flex;
@@ -295,8 +296,8 @@ footer .container {
 }
 
 .button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .section-6 {
@@ -317,7 +318,7 @@ footer .container {
   width: 370px;
   height: 404px;
   box-sizing: border-box;
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -343,17 +344,16 @@ footer .container {
 }
 
 .description-project {
-  color: #757575;
+  color: var(--gray);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.03em;
   padding-left: 24px;
   margin: 1px;
 }
-
 /*portafolio footer*/
 .media-title {
-  color: #ffffff;
+  color: var(--white);
   font-size: 14px;
   height: 16px;
   width: 135px;
@@ -361,7 +361,6 @@ footer .container {
   top: 1703px;
   margin-left: 156px;
 }
-
 /*estilos de los vectores & imagen de fondo*/
 .container-fluid {
   height: 600px;
@@ -391,13 +390,6 @@ footer .container {
   fill: #afb1b8;
 }
 
-.client-container:hover {
-  border-color: #2196f3;
-}
-.client-container:hover .client-logo {
-  fill: #2196f3;
-}
-
 .contact-icons {
   width: 16px;
   height: 16px;
@@ -409,7 +401,7 @@ footer .container {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  border-color: #f5f4fa;
+  border: 1px #f5f4fa solid;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -421,10 +413,6 @@ footer .container {
   margin: 25px 100px;
 }
 
-.icons-container-para:hover .paragraph-icons:hover {
-  border-color: #2196f3;
-  fill: #2196f3;
-}
 .social-team-section {
   display: flex;
   justify-content: center;
@@ -435,7 +423,7 @@ footer .container {
   height: 44px;
   border-radius: 22px;
   padding: 12px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .social-team-icon {
@@ -445,19 +433,20 @@ footer .container {
 }
 
 .social-team-container:hover {
-  background-color: #2196f3;
-  fill: #fff;
+  background-color: var(--blue);
+  fill: var(--white);
 }
 
 .social-media-icon {
   width: 20px;
   height: 20px;
-  fill: #fff;
+  fill: var(--white);
 }
 
 .media-links-container {
   display: flex;
   margin-left: 156px;
+  justify-content: center;
 }
 
 .media-link {
@@ -469,5 +458,5 @@ footer .container {
 }
 
 .media-link:hover {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
