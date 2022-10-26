@@ -1,3 +1,4 @@
+/*estilos generales*/
 :root {
     --white: #FFF;
     --black: #000;
@@ -45,9 +46,7 @@ footer {
 
 footer .container {
     display: flex;
-    
 }
-
 
 .style-link.contact {
     color: var(--gray);
@@ -80,7 +79,8 @@ footer .container {
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 50px;
 }
 
 
@@ -97,14 +97,8 @@ footer .container {
     padding-left: 0;
 }
 
-.contact:hover,
-.contact:focus {
-    color: #2196F3;
-}
-
 /*stilos del BG*/
 .section-1 {
-    background-image: url("images/overlay-image.jpg");
     background-color: #2F303A;
     height: 600px;
     background-repeat: no-repeat;
@@ -205,7 +199,7 @@ footer .container {
 /*stilos del equipo de trabajo*/
 .section-4 {
     background-color: #F5F4FA;
-    height: 648px;
+    min-height: 708px;
 }
 
 .title-team {
@@ -214,6 +208,7 @@ footer .container {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .team-work {
@@ -230,7 +225,7 @@ footer .container {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    min-height: 368px;
+    min-height: 428px;
 }
 
 .professional-name {
@@ -370,21 +365,14 @@ footer .container {
     margin-left: 156px;
 }
 
-.media-links {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    padding-left: 516px;
-}
-
-/*estilos de vectores*/
+/*estilos de los vectores & imagen de fondo*/
 .container-fluid {
     height: 600px;
-    background-image: url("images/overlay-image.jpg");
+    background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../images/overlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .costumer-section {
@@ -413,3 +401,77 @@ footer .container {
     fill: #2196F3;
 }
 
+.contact-icons {
+    width: 16px;
+    height: 16px;
+    fill: #afb1b8;
+    margin-right: 10px;
+}
+
+.icons-container-para {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.paragraph-icons {
+    width: 65.32px;
+    height: 70px;
+    fill: #212121;
+    margin: 25px 100px;
+}
+
+.icons-container-para:hover .paragraph-icons:hover {
+    border-color: #2196F3;
+    fill: #2196F3;
+}
+.social-team-section {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-team-container {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 12px;
+    background-color: #FFF;
+}
+ 
+.social-team-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-team-container:hover {
+    background-color: #2196F3;
+    fill: #FFF;
+}
+
+.social-media-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFF;
+}
+
+.media-links-container {
+    display: flex;
+    margin-left: 156px;
+}
+
+.media-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.media-link:hover {
+    background-color: #2196F3;
+}
