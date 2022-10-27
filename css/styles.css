@@ -271,6 +271,16 @@ footer .container {
   min-height: 21px;
   font-style: normal;
 }
+/*portafolio footer*/
+.media-title {
+  color: var(--white);
+  font-size: 14px;
+  height: 16px;
+  width: 135px;
+  left: 516px;
+  top: 1703px;
+  margin-left: 156px;
+}
 /*ESTILOS DEL PORTFOLIO*/
 /*estilos de los botones*/
 .section-5 ul {
@@ -322,10 +332,14 @@ footer .container {
   box-sizing: border-box;
   background: var(--white);
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   flex-basis: left calc(50% - 370px / 2 - 400px);
   flex-basis: top calc(50% - 294px / 2 + 349px);
+}
+
+.project-board:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .project-board > h3 {
@@ -352,16 +366,6 @@ footer .container {
   letter-spacing: 0.03em;
   padding-left: 24px;
   margin: 1px;
-}
-/*portafolio footer*/
-.media-title {
-  color: var(--white);
-  font-size: 14px;
-  height: 16px;
-  width: 135px;
-  left: 516px;
-  top: 1703px;
-  margin-left: 156px;
 }
 /*estilos de los vectores & imagen de fondo*/
 .container-fluid {
@@ -426,19 +430,20 @@ footer .container {
   border-radius: 22px;
   padding: 12px;
   background-color: var(--white);
+  fill: #afb1b8;
 }
 
 .social-team-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  cursor: pointer;
 }
 
 .social-team-container:hover {
   background-color: var(--blue);
   fill: var(--white);
 }
-
+/*iconos del footer*/
 .social-media-icon {
   width: 20px;
   height: 20px;
@@ -446,9 +451,12 @@ footer .container {
 }
 
 .media-links-container {
-  display: flex;
+  width: 206px;
+  left: 516px;
+  height: 80px;
   margin-left: 156px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .media-link {
@@ -457,6 +465,7 @@ footer .container {
   border-radius: 22px;
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .media-link:hover {
